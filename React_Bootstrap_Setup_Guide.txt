@@ -1,0 +1,129 @@
+Random Dictionary App 📖 (React + Bootstrap)
+============================================
+
+A beginner-friendly React project that fetches a random word and displays its definitions using free public APIs. 
+The project is designed to help new learners understand how to set up and run a React environment.
+
+------------------------------------------------
+1. Prerequisites
+------------------------------------------------
+
+Windows: Installing WSL on Windows
+
+Windows Subsystem for Linux (WSL) lets you run a Linux environment directly on Windows.  
+Follow these steps to install:
+
+1. Open **PowerShell** as Administrator.
+2. Run the following command:
+   ```powershell
+   wsl --install
+
+
+Before starting, make sure you have the following installed:
+
+- Node.js (LTS version recommended)
+  - Download: https://nodejs.org
+  - Verify installation:
+    node -v
+    npm -v
+  - Windows users who want Linux-like tools may also install WSL: https://learn.microsoft.com/en-us/windows/wsl/install
+
+- Git
+  - Download: https://git-scm.com/downloads
+  - Verify installation:
+    git --version
+
+- Visual Studio Code (VS Code)
+  - Download: https://code.visualstudio.com
+  - Useful extensions: ESLint, Prettier – Code Formatter
+
+Optional version managers:
+- macOS/Linux → nvm: https://github.com/nvm-sh/nvm
+- Windows → nvm-windows: https://github.com/coreybutler/nvm-windows
+
+------------------------------------------------
+2. Creating the Project
+------------------------------------------------
+
+You have two options. Vite is recommended since it’s faster and more modern.
+
+Option A: Vite (Recommended)
+----------------------------
+# 1. Scaffold the project
+npm create vite@latest random-dictionary-app
+
+# Choose options:
+# - Framework: React
+# - Variant: JavaScript
+
+# 2. Move into folder
+cd random-dictionary-app
+
+# 3. Install dependencies
+npm install
+
+Option B: Create React App (CRA)
+--------------------------------
+npx create-react-app random-dictionary-app
+cd random-dictionary-app
+
+(CRA still works, but it’s slower and less flexible than Vite.)
+
+------------------------------------------------
+3. Add Bootstrap
+------------------------------------------------
+
+Vite projects
+-------------
+npm install bootstrap
+
+In src/main.jsx, import Bootstrap:
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+CRA projects
+------------
+npm install bootstrap
+
+In src/index.js, import Bootstrap:
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+------------------------------------------------
+4. Run the Project
+------------------------------------------------
+
+Once everything is installed:
+
+Vite
+----
+npm run dev
+
+Vite will print a local server URL, usually:
+http://localhost:5173
+
+CRA
+---
+npm start
+
+Runs on:
+http://localhost:3000
+
+------------------------------------------------
+5. Next Steps
+------------------------------------------------
+
+If everything worked, you’re now running a basic React + Bootstrap app locally.  
+From here, you can open the project in VS Code and start exploring the source code (already included in this repo).
+
+------------------------------------------------
+References / Official Docs
+------------------------------------------------
+
+- React: https://react.dev
+- Vite: https://vitejs.dev
+- Create React App: https://create-react-app.dev
+- Bootstrap: https://getbootstrap.com
+- Node.js: https://nodejs.org
+- Git: https://git-scm.com
+- VS Code: https://code.visualstudio.com
+- Free Dictionary API: https://dictionaryapi.dev
+- Random Word API: https://random-word-api.herokuapp.com
